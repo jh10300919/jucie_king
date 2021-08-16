@@ -1,0 +1,988 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+
+@font-face {
+    font-family: '777Balsamtint';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+}
+
+/* 초기화 */
+
+:root {
+    --main-color1: #00B7BF;
+    --main-color2: #F3665D;
+    --font-size: 16pt
+}
+
+section {
+    background: url(../img/wall.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.sec2,
+.sec3,
+.sec4 {
+    padding: 50px 0;
+}
+
+.sec5 {
+    padding-top: 100px;
+}
+
+header {
+    color: var(--main-color1);
+}
+
+.top {
+    font-family: '777Balsamtint';
+    font-size: 1.5rem;
+
+    padding: 20px;
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.sns i {
+    color: var(--main-color1);
+    padding: 0 5px;
+}
+
+.top .etc a {
+    font-family: '777Balsamtint';
+    font-size: 1.5rem;
+    color: var(--main-color1);
+    padding: 0 5px;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: auto;
+    position: relative;
+}
+
+.gnb>li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.gnb>li>a {
+    cursor: pointer;
+    font-family: '777Balsamtint';
+    color: var(--main-color1);
+
+    font-size: 2rem;
+    display: block;
+
+    transition: .3s;
+}
+
+.sub {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 10;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.gnb:hover .sub {
+    height: 690%;
+}
+
+.sub li a {
+    font-family: '777Balsamtint';
+    white-space: nowrap;
+    display: block;
+    color: white;
+    padding: 10px 0;
+}
+
+.sub>li>a {
+    font-size: 1.5em;
+
+    transition: .3s;
+}
+
+.sub>li>a:hover {
+    background-color: white;
+    color: var(--main-color1);
+}
+
+nav {
+    position: relative;
+}
+
+nav::after {
+    background-color: var(--main-color1);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0%;
+
+    transition: .3s;
+    z-index: 5;
+}
+
+nav.on::after {
+    height: 690%;
+}
+
+/* 섹션 1 */
+.ad {
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color1);
+    color: white;
+}
+
+.ad h1 {
+    padding-right: 10px;
+    font-size: 1.3vw;
+}
+
+.car {
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+}
+
+.car img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main {
+    padding: 5vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo2 {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+}
+
+.logo2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+.sec1 .t1 {
+    letter-spacing: -0.1em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec1 .t1 p:nth-of-type(1) {
+    font-size: 10vw;
+    letter-spacing: -0.1em;
+    color: var(--main-color2);
+    font-weight: 400;
+    text-shadow: 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.sec1 .t1 p:nth-of-type(2) {
+    text-align: right;
+    font-size: 2vw;
+    padding-left: 10px;
+}
+
+.txt {
+    text-align: right;
+}
+
+.sec1 .txt .t2 {
+    font-family: 'GyeonggiTitleM';
+    color: var(--main-color1);
+    letter-spacing: -0.05em;
+    font-weight: 400;
+    font-size: 4vw;
+    margin-top: 5px;
+    background-color: white;
+    display: inline-block;
+}
+
+.more {
+    position: relative;
+    width: 10vw;
+}
+
+.more1 a,
+.more1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.more1 img {
+    width: 100%;
+}
+
+.more a {
+    color: transparent;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    z-index: 10;
+}
+
+/* 슬라이드 */
+
+.main3 {
+    height: 30vw;
+}
+
+.main3 div {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main3 div p {
+    font-size: 3vw;
+}
+
+.main2 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -5vw;
+}
+
+.main2 img {
+    display: inline-block;
+    width: 100vw;
+}
+
+.sec1 article {
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: url(../img/wall.jpg) no-repeat;
+    background-size: cover;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-pagination {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: var(--main-color1);
+}
+
+.swiper-button-prev {
+    left: 15vw;
+}
+
+.swiper-button-next {
+    right: 15vw;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    margin: auto;
+    color: var(--main-color1);
+}
+
+/*  섹션 etc 추가 */
+.sec_etc {}
+
+.sec_etc article {
+    background-color: white;
+}
+
+.sec_etc article ul {
+    width: 60%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.sec_etc article ul li:nth-of-type(1) {
+    text-align: left;
+    width: 20vw;
+    font-size: 1vw;
+    letter-spacing: -0.1em;
+    line-height: 1.5em;
+}
+
+.sec_etc article ul li {
+    padding: 10px 2vw;
+    text-align: center;
+    border-right: 1px solid var(--main-color1);
+    white-space: nowrap;
+
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: .3s;
+}
+
+.sec_etc article ul li:nth-of-type(2):hover,
+.sec_etc article ul li:nth-of-type(3):hover,
+.sec_etc article ul li:nth-of-type(4):hover,
+.sec_etc article ul li:nth-of-type(5):hover,
+.sec_etc article ul li:nth-of-type(6):hover {
+    background-color: var(--main-color1);
+    color: white;
+}
+
+.sec_etc li a {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+
+/* 섹션 2 */
+
+.sec2 {
+    text-align: center;
+    background: url(../img/wall2.png) center no-repeat;
+    background-size: cover;
+    color: white;
+
+    position: relative;
+}
+
+.sec2 .sugar,
+.sec2 .stor {
+    position: absolute;
+    top: 0;
+    width: 20vw;
+    height: 100%;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.sec2 .sugar {
+    left: 0;
+}
+
+.sec2 .stor {
+    right: 10%;
+}
+
+.sec2 .sugar img,
+.sec2 .stor img {
+    position: absolute;
+    left: -50%;
+    height: 100%;
+}
+
+.sec2 article>p {
+    font-family: '777Balsamtint';
+
+    margin-bottom: 5vw;
+    font-size: 2vw;
+    background-color: var(--main-color2);
+    padding: 3px;
+    display: inline-block;
+}
+
+.sec2 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 5;
+}
+
+.left {
+    text-align: center;
+}
+
+.sec2 .inner .title {
+    font-family: 'GyeonggiTitleM';
+    letter-spacing: -0.05em;
+    font-size: 3vw;
+    padding: 30px 0;
+}
+
+.sec2 .t1 {
+    width: 30vw;
+
+    padding: 10px 0;
+    font-size: 1.5vw;
+    font-style: italic;
+    line-height: 1.7vw;
+
+    letter-spacing: -0.1em;
+}
+
+.sec2 .t2 {
+    width: 30vw;
+    font-weight: 100;
+    padding: 10px 0;
+    font-size: 1vw;
+    letter-spacing: -0.05em;
+}
+
+.sec2 span {
+    display: inline-block;
+    background-color: var(--main-color1);
+}
+
+.logo3 {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+}
+
+.logo3 img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec2 .right .t1 {
+    padding: 1.5vw 0;
+}
+
+/* 섹션 2 걸어온 길? */
+.bottom {
+    margin-top: 5vw;
+}
+
+.nth {
+    border-top: 3px solid white;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 5vw;
+
+    position: relative;
+    z-index: 5;
+}
+
+.nth::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 0;
+    box-shadow: 0 0 6px var(--main-color1);
+
+}
+
+.nth>li {
+    position: absolute;
+
+    padding-top: 10px;
+    line-height: 1.2rem;
+}
+
+.nth>li p {
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+
+.nth>li:nth-of-type(1) {
+    left: -5%;
+}
+
+.nth>li:nth-of-type(2) {
+    left: 7%;
+}
+
+.nth>li:nth-of-type(3) {
+    left: 18%;
+}
+
+.nth>li:nth-of-type(4) {
+    left: 40%;
+}
+
+.nth>li:nth-of-type(5) {
+    left: 55%;
+}
+
+.nth>li:nth-of-type(6) {
+    left: 80%;
+}
+
+.nth>li:nth-of-type(7) {
+    right: -3%;
+}
+
+/* 섹션 3 */
+.sec3 article {
+    text-align: center;
+}
+
+.sec3 article>p {
+    font-family: '777Balsamtint';
+    font-size: 3vw;
+    background-color: var(--main-color1);
+    display: inline-block;
+    color: white;
+    padding: 3px 3vw;
+
+    position: relative;
+}
+
+.sec3 article>p::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0 0 6px var(--main-color1);
+}
+
+.sec3 article>div {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+.sec3 .inner1,
+.sec3 .inner2 {
+    padding: 5vw 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3 .inner2 {
+    width: 50%;
+}
+
+.sec3 ul li {
+    width: 15vw;
+    height: 15vw;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.sec3 .inner ul li p {
+    display: inline-block;
+    font-size: 1.5vw;
+    font-family: '777Balsamtint';
+    color: var(--main-color1);
+    padding: 0 3px;
+
+    transition: .3s;
+}
+
+.sec3 .inner ul li:hover p {
+    background-color: var(--main-color1);
+    color: white;
+}
+
+.sec3 .inner1 div,
+.sec3 .inner2 div {
+    position: relative;
+    width: 6vw;
+    padding-top: 11vw;
+    margin: auto;
+}
+
+.sec3 .inner2 li:nth-of-type(1) div {
+    width: 5.3vw;
+}
+
+.sec3 .inner2 div {
+    width: 8vw;
+
+}
+
+.sec3 .inner1 div img,
+.sec3 .inner2 div img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec3 .inner li {
+    position: relative;
+}
+
+.sec3 .inner a {
+    position: absolute;
+    color: transparent;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+
+
+.more2 {
+    position: absolute;
+    width: 10vw;
+    right: 5%;
+}
+
+.more2 a,
+.more4 a {
+    color: transparent;
+    height: 100%;
+    z-index: 10;
+}
+
+.more2 .more1 {
+    position: absolute;
+}
+
+/* 과일 자세히보기 */
+.more3 {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.more4 {
+    width: 10vw
+}
+
+.more4 a {
+    position: absolute;
+    width: 100%;
+}
+
+.more4 img {
+    width: 100%;
+}
+
+/* 호버시 애니메이션 */
+.sec3 .inner1 li div img:nth-of-type(1),
+.sec3 .inner2 li div img:nth-of-type(1) {
+    opacity: 0;
+    transition: .3s;
+}
+
+.sec3 .inner1 li:hover div img:nth-of-type(1),
+.sec3 .inner2 li:hover div img:nth-of-type(1) {
+    opacity: 1;
+}
+
+.sec3 .inner1 li div img:nth-of-type(2),
+.sec3 .inner2 li div img:nth-of-type(2) {
+    opacity: 1;
+    transition: .3s;
+}
+
+.sec3 .inner1 li.on div img:nth-of-type(1),
+.sec3 .inner2 li.on div img:nth-of-type(1) {
+    opacity: 1;
+}
+
+.sec3 .inner1 li.off div img:nth-of-type(2),
+.sec3 .inner2 li.off div img:nth-of-type(2) {
+    opacity: 0;
+}
+
+/* 섹션 4 */
+.sec4 {
+    text-align: center;
+}
+
+.sec4 article>p {
+    font-size: 3vw;
+    font-family: '777Balsamtint';
+    background-color: var(--main-color1);
+    display: inline-block;
+    color: white;
+    padding: 3px 5vw;
+    margin-bottom: 10vw;
+
+    position: relative;
+}
+
+.sec4 article>p::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0 0 6px var(--main-color1);
+}
+
+.sec4 .inner {
+    width: 50%;
+    margin: auto;
+
+    display: flex;
+}
+
+.notice,
+.sec4 .sns {
+    flex: 1;
+
+    text-align: left;
+}
+
+.sec4 .sns p,
+.notice>p {
+    font-family: '777Balsamtint';
+    font-size: 2rem;
+    background-color: white;
+    color: var(--main-color1);
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.sec4 .sns p,
+.notice>p {
+    margin-bottom: 10px;
+}
+
+.sns_inner {
+    display: flex;
+}
+
+.sns_box {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    box-shadow: 0 0 6px var(--main-color1);
+}
+
+.sns_box:nth-of-type(1) {
+    margin-right: 15px;
+}
+
+.sns_box img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.sns_box a {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 10;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.sns_box a span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s;
+}
+
+.sns_box:hover a,
+.sns_box:hover a span {
+    opacity: 1;
+}
+
+.sec4 .not_inner {
+    background-color: white;
+    height: 10vw;
+    box-shadow: 0 0 3px var(--main-color1);
+}
+
+.not_inner li {
+    width: 20vw;
+    height: 2vw;
+    margin: auto;
+    line-height: 2vw;
+}
+
+.not_inner li>a {
+    display: flex;
+}
+
+.not_inner li>a>p,
+.not_inner li>a>span {
+
+    font-size: 1.2rem;
+    letter-spacing: -0.1em;
+    font-family: 'Noto Sans KR';
+    text-decoration: underline;
+}
+
+.not_inner li>a>p {
+    width: 15vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.not_inner li>a>span {
+    padding-left: 30px;
+}
+
+/* 섹션 5 */
+
+.sec5 {
+    /* 맨위에 있음 패딩 탑 100px */
+}
+
+.inner5 {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.inner5 div {
+    padding: 0 30px;
+    position: relative;
+    height: 5vw;
+    width: 6vw;
+}
+
+.inner5 div:nth-of-type(1),
+.inner5 div:nth-of-type(5) {
+    width: 3vw;
+}
+
+.inner5 div a {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner5 div a img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background-color: var(--main-color1);
+    text-align: center;
+    color: white;
+    padding: 40px;
+    line-height: 1.2rem;
+}
+
+.f_txt p:nth-of-type(5) {
+    margin-top: 30px;
+}

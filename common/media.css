@@ -1,0 +1,366 @@
+@media(max-width:1110px) {
+
+    /* header, */
+    .sec5,
+    .sec2 .bottom,
+    .sec2 .logo3,
+    .sec1 .ad .car {
+        display: none;
+    }
+    .etc a:nth-of-type(3),
+    .sns,
+    .logo {
+        display: none;
+    }
+    /* 메뉴 */
+
+    .ham {
+        cursor: pointer;
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
+        right: 5%;
+        top: 5%;
+        z-index: 99;
+    }
+    nav {
+        display: none;
+    }
+    nav.on {
+        position: absolute;
+        z-index: 50;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--main-color1);
+    }
+    nav::after {
+        display: none;
+    }
+
+
+    .top {
+        margin-top: 15vw;
+        justify-content: center;
+    }
+    .top .etc a {
+        color: white;
+    }
+    .gnb {
+        flex-direction: column;
+        border: 1px dotted white;
+        width: 100%;
+    }
+    .gnb li a{
+        color: white;
+    }
+    nav::after {
+        display: none;
+    }
+    .sub {
+        opacity: 0.5;
+    }
+
+
+    
+    /* 메뉴 끝 */
+    /* 섹션 1 */
+    .sec1_media {
+        display: none;
+    }
+
+    .ad {
+        height: 10vw;
+    }
+
+    .ad h1 {
+        font-size: 3vw;
+    }
+
+    .main {
+        height: 80vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 20vw;
+    }
+
+    .logo2 {
+        position: absolute;
+        width: 40vw;
+        height: 40vw;
+        margin-top: 50vw;
+        margin-right: 35vw;
+    }
+
+    .txt {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .sec1 .t1 p:nth-of-type(1) {
+        font-size: 30vw;
+    }
+
+    .sec1 .t1 p:nth-of-type(2) {
+        font-size: 5vw;
+    }
+
+    .sec1 .txt .t2 {
+        font-size: 10vw;
+        margin-right: 8vw;
+    }
+
+    .more {
+        position: absolute;
+        width: 25vw;
+        padding-left: 25vw;
+        padding-top: 55vw;
+    }
+
+    /* 슬라이드 */
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-wrapper .swiper-slide:nth-of-type(2),
+    .swiper-wrapper .swiper-slide:nth-of-type(3) {
+        display: none;
+    }
+
+    /* 섹션 etc 추가 */
+
+    .sec_etc ul li:nth-of-type(1) {
+        display: none;
+    }
+
+    .sec_etc article ul {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .sec_etc article ul li {
+        flex: 1;
+        padding: 5vw 0;
+        font-size: 1vw;
+    }
+
+    .sec_etc article ul li:last-child {
+        border: transparent;
+    }
+
+    /* 섹션 2 */
+    .sec2 .sugar,
+    .sec2 .stor {
+        display: none;
+    }
+
+    .sec2 .inner {
+        flex-direction: column;
+    }
+
+    .sec2 article {
+        position: relative;
+    }
+
+    .sec2 article>p {
+        position: absolute;
+        font-size: 8vw;
+        width: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sec2 .inner .title {
+        font-size: 8vw;
+        padding: 5vw 0;
+    }
+
+    .sec2 .t1 {
+        display: none;
+    }
+
+    .sec2 .t2 {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .left {
+        margin-bottom: 100px;
+    }
+
+    /* 강사추가 */
+    .sec3 .inner1 li div img:nth-of-type(2),
+    .sec3 .inner2 li div img:nth-of-type(2) {
+        display: none;
+    }
+
+    /* 섹션 3 */
+    .banana,
+    .orange,
+    .pine,
+    .melon,
+    .heart,
+    .box {
+        display: none;
+    }
+
+    .sec3 article {
+        text-align: left;
+        padding: 0 10vw;
+    }
+
+    .sec3 article>p {
+        margin-bottom: 15vw;
+        font-size: 8vw;
+    }
+
+    .sec3 article>div {
+        flex-direction: row;
+    }
+
+    .sec3 .inner1,
+    .sec3 .inner2 {
+        justify-content: center;
+        padding: 10vw 0;
+        flex: 1;
+    }
+
+    .sec3 .inner ul li p {
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+
+    .sec3 ul li {
+        width: 30vw;
+        height: 30vw;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: -6px 6px 0 var(--main-color1);
+    }
+
+    .sec3 .inner1 div,
+    .sec3 .inner2 div {
+        width: 20vw;
+    }
+
+    .sec3 .inner1 li:nth-of-type(1) div {
+        padding-top: 23vw;
+        width: 20vw;
+    }
+
+    .sec3 .inner1 li:nth-of-type(1) div img {
+        top: 25%;
+    }
+
+    .sec3 .inner2 li:nth-of-type(1) div {
+        padding-top: 23vw;
+        width: 20vw;
+    }
+
+    .sec3 .inner1 li div img:nth-of-type(2),
+    .sec3 .inner2 li div img:nth-of-type(2) {
+        display: none;
+    }
+
+    /* 섹션 4 */
+
+    .more2 {
+        width: 20vw;
+        position: absolute;
+        left: 25%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    .more4 {
+        width: 20vw;
+        right: 30%;
+        transform: translateX(-30%);
+    }
+
+    /* 섹션 4 */
+    .sec4 {
+        text-align: left;
+        padding: 0 10vw;
+    }
+
+    .sec4 article>p {
+        margin-bottom: 15vw;
+        font-size: 8vw;
+    }
+
+    .sec4 .inner {
+        width: 80vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec4 .sns p,
+    .notice>p {
+        display: none;
+    }
+
+    .sns_box {
+        height: 30vw;
+        width: 30vw;
+        margin-bottom: 5vw;
+    }
+
+    .notice {
+        width: 61vw;
+    }
+
+    .sec4 .not_inner {
+        height: 30vw;
+        padding: 5vw 0;
+        margin-bottom: 5vw;
+    }
+
+    .not_inner li {
+        width: 80%;
+        padding: 2vw 0;
+    }
+
+    .not_inner li>a>p {
+        width: 40vw;
+    }
+
+    .not_inner li>a>p,
+    .not_inner li>a>span {
+        font-size: 2.5vw;
+        padding: 0.5vw 0;
+    }
+
+    footer {
+        background: url(../img/wall.jpg);
+        padding-top: 15vw;
+        height: 10vw;
+
+        position: relative;
+    }
+
+    .f_txt p:nth-of-type(1),
+    .f_txt p:nth-of-type(2),
+    .f_txt p:nth-of-type(3),
+    .f_txt p:nth-of-type(4) {
+        display: none;
+    }
+
+    .f_txt p:nth-of-type(5) {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        width: 100%;
+        background-color: var(--main-color1);
+        font-size: 2vw;
+        padding: 3vw;
+    }
+}
